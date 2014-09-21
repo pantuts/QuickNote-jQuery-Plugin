@@ -23,7 +23,6 @@ How To Use
  ```
  theme: dark or light` # default is dark
  pos: right or left # default is right
- 
  ```
  
 Demo
