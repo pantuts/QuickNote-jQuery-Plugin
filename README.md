@@ -26,3 +26,9 @@ How To Use
  
  ```
  
+Demo
+=======================
+
+ http://pantuts.com/demos/jquery.quicknote/index.html
+ 
+ http://pantuts.com/demos/jquery.quicknote/index2.html
