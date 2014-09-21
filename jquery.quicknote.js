@@ -58,7 +58,7 @@
 		completeNote: function() {
 			// i USED FOR NOTES ID
 			var i = 0;
-			$('.qn_container').on('keypress', '#notes input', function(e) {
+			this.$el.on('keypress', '#notes input', function(e) {
 				// RETURN KEY PRESSED
 				if (e.which == 13 || e.keyCode == 13) {
 					var notesInpVal = $('#notes input').val();
@@ -73,12 +73,12 @@
 			});
 
 			// SHOW AND HIDE
-			$('.qn_container').on('click', '#qn_sh span', function(){
+			this.$el.on('click', '#qn_sh span', function(){
 				$('.qn_container #notes').slideToggle(100);
 			});
 
 			// CLICK TO CLOSE NOTES
-			$('.qn_container').on('click', '#notes .quicknote', function(){
+			this.$el.on('click', '#notes .quicknote', function(){
 				$(this).each(function(){
 					$(this).stop().fadeOut('fast', function() {
 						$(this).remove();
