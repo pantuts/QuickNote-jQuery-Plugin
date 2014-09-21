@@ -1,0 +1,156 @@
+/*
+    QuickNote jQuery Plugin
+    Copyright 2014 Pantuts (http://pantuts.com)
+    License: GNU GPLv3
+    URL: https://github.com/pantuts/QuickNote-jQuery-Plugin/
+ */
+*,
+:before,
+:after
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* container dark */
+.qn_container
+{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    overflow-y: auto;
+    width: 300px;
+    max-height: 90%;
+    margin-right: 5px;
+    padding: 5px;
+    -webkit-border-radius: 5px 5px 0 0;
+       -moz-border-radius: 5px 5px 0 0;
+            border-radius: 5px 5px 0 0;
+    background: #313a39;
+}
+/* end container */
+
+/* show/hide */
+#qn_sh
+{
+    position: relative;
+    text-align: center;
+}
+#qn_sh span
+{
+    font-size: .9em;
+    display: table;
+    margin: 0 auto;
+    padding: 2px 0;
+    color: #dbdbdb;
+    width: 100%;
+}
+#qn_sh span:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* end show/hide */
+
+/* notes container */
+#notes
+{
+    position: relative;
+    overflow: hidden;
+    width: auto;
+}
+
+/* end notes container */
+
+/* notes */
+#notes > span,
+#notes p
+{
+    right: 0;
+    display: table;
+    text-align: left;
+}
+#notes p,
+#notes p input
+{
+    font-size: .9em;
+    width: 100%;
+}
+#notes p
+{
+    margin: 5px auto 0 auto;
+    /*padding: 2px;*/
+}
+#notes p input
+{
+    width: 100%;
+    /*min-width: 250px;
+    max-width: 280px;*/
+    color: #6d6d6d;
+    border: 1px solid #ccc;
+}
+#notes p input:focus
+{
+    border-color: #ccc;
+    box-shadow: 0;
+}
+.quicknote,
+#notes p input
+{
+    position: relative;
+    height: auto;
+    /*margin: 5px auto;*/
+    padding: 7px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+}
+.quicknote
+{
+    font-size: .8em;
+    margin: 5px 0;
+    margin-right: 0;
+    overflow: auto;
+    max-width: 100%;
+    color: #1e5866;
+    background: #51c5e2;
+}
+.quicknote:first-child
+{
+    margin-top: 0;
+}
+.quicknote:hover
+{
+    cursor: pointer;
+}
+/* end notes */
+
+/* container light */
+.qn_container_light
+{
+    border: 1px solid #ddd;
+    background: #EFEFEF;
+}
+/* end container light */
+
+/* show/hide */
+.qn_container_light #qn_sh span
+{
+    color: #737373;
+}
+/* end show/hide */
+
+
+/* notes light */
+.qn_container_light #notes span
+{
+    color: #2da68f;
+    border: 1px solid #97e8fc;
+    background: #7AF4DC;
+}
+.qn_container_light #notes input {
+    background: #F7F7F7;
+}
+/* end notes light */
