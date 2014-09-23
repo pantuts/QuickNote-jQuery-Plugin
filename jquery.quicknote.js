@@ -8,10 +8,10 @@
  * http://pantuts.com
  * Version 1.1
  * Changelog:
- * 		Added support for localStorage
+ * 	Added support for localStorage
  *   	Added close button instead of directly clicking on note
  *    	Changed font to Open Sans
- * 		Text wrapping
+ * 	Text wrapping
  */
 
 ;(function($, window, document, undefined) {
