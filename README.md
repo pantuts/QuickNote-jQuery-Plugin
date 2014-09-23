@@ -23,6 +23,7 @@ How To Use
  ```
  theme: dark or light` # default is dark
  pos: right or left # default is right
+ storage: true or false # default is true
  ```
  
 Demo
