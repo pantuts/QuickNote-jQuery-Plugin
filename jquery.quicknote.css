@@ -3,7 +3,11 @@
     Copyright 2014 Pantuts (http://pantuts.com)
     License: GNU GPLv3
     URL: https://github.com/pantuts/QuickNote-jQuery-Plugin/
+    Version 1.1
  */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 *,
 :before,
 :after
@@ -40,13 +44,15 @@
 }
 #qn_sh span
 {
-    font-size: .9em;
+    font-family: 'Open Sans', sans, arial;
+    font-size: .8em;
     display: table;
+    width: 100%;
     margin: 0 auto;
     padding: 2px 0;
     color: #dbdbdb;
-    width: 100%;
 }
+
 #qn_sh span:hover
 {
     cursor: pointer;
@@ -68,8 +74,10 @@
 #notes > span,
 #notes p
 {
+
+    font-family: 'Open Sans', sans, arial;
     right: 0;
-    display: table;
+    display: inline-block;
     text-align: left;
 }
 #notes p,
@@ -86,8 +94,6 @@
 #notes p input
 {
     width: 100%;
-    /*min-width: 250px;
-    max-width: 280px;*/
     color: #6d6d6d;
     border: 1px solid #ccc;
 }
@@ -101,7 +107,6 @@
 {
     position: relative;
     height: auto;
-    /*margin: 5px auto;*/
     padding: 7px;
     -webkit-border-radius: 5px;
        -moz-border-radius: 5px;
@@ -110,18 +115,42 @@
 .quicknote
 {
     font-size: .8em;
-    margin: 5px 0;
-    margin-right: 0;
+    position: relative;
     overflow: auto;
     max-width: 100%;
+    margin: 5px 0;
+    margin-right: 0;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
     color: #1e5866;
     background: #51c5e2;
 }
+
 .quicknote:first-child
 {
     margin-top: 0;
 }
-.quicknote:hover
+.close:before
+{
+    content: 'x';
+}
+.close
+{
+    font-weight: bold;
+    position: relative;
+    top: 0;
+    margin-top: 0;
+    float: right;
+    margin-left: 20px;
+    padding: 0 3px;
+    color: #6b2424;
+}
+
+.close:hover
 {
     cursor: pointer;
 }
