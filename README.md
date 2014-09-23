@@ -21,8 +21,8 @@ How To Use
  ```
  Options are:
  ```
- theme: dark or light` # default is dark
- pos: right or left # default is right
+ theme: 'dark' or 'light'` # default is dark
+ pos: 'right' or 'left' # default is right
  storage: true or false # default is true
  ```
  
