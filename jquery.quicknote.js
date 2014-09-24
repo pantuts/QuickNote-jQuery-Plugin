@@ -61,7 +61,7 @@
 
 			var showHide = '<div id="qn_sh"><span>Show/Hide</span></div>';
 			var divNotes = '<div id="notes"></div>';
-			var notesInp = '<p><input type="text" name="qn_input" maxlength="200" placeholder="Your notes..."></p>';
+			var notesInp = '<p><input type="text" name="qn_input" maxlength="500" placeholder="Your notes..."></p>';
 			$(showHide).appendTo(this.$el);
 			$(divNotes).appendTo(this.$el);
 			$(notesInp).appendTo(this.$el.find('#notes'));
