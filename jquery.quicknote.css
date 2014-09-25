@@ -128,7 +128,7 @@
     white-space: -pre-wrap;
     white-space: -o-pre-wrap;
     word-wrap: break-word;
-    word-break: break-all;
+    word-break: break-word;
     color: #1e5866;
     background: #51c5e2;
 }
