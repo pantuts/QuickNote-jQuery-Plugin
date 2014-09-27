@@ -73,7 +73,7 @@
 					$.each(ls, function(i, obj) {
 						$('<span class="quicknote" id="' + ls[i].id + '"></span>').css({ display: 'table' }).stop().fadeIn('fast').appendTo('.qn_container #notes').text(ls[i].note);
 						$('<span class="close"></span>').prependTo('#' + ls[i].id);
-					})
+					});
 				}
 			}
 		},
