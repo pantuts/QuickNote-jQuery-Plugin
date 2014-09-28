@@ -132,7 +132,9 @@
     color: #1e5866;
     background: #51c5e2;
 }
-
+.quicknote-bword {
+    word-break: break-all !important;
+}
 .quicknote:first-child
 {
     margin-top: 0;
